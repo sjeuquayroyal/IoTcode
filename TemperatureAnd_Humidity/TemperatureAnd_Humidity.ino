@@ -7,18 +7,18 @@ DHT dht(DHTPIN, DHTTYPE);
  
 void setup() {
   ​Serial.begin(9600)
-  ​dht.begin();         // Khởi động cảm biế
+  ​dht.begin();         // Khởi động cảm biến
 }
  
 void loop() {
-  ​float h = dht.readHumidity();    //Đọc độ ẩ
-  ​float t = dht.readTemperature(); //Đọc nhiệt đ
+  ​float h = dht.readHumidity();    //Đọc độ ẩm
+  ​float t = dht.readTemperature(); //Đọc nhiệt độ
  
-  ​Serial.print("Nhiet do: ")
-  ​Serial.println(t);               //Xuất nhiệt đ
-  ​Serial.print("Do am: ")
-  ​Serial.println(h);               //Xuất độ ẩ
+  ​Serial.print("Temperature: ")
+  ​Serial.println(t);               //Xuất nhiệt độ
+  ​Serial.print("Humidity: ")
+  ​Serial.println(h);               //Xuất độ ẩm
   
-  ​Serial.println();                //Xuống hàn
-  ​delay(1000);                     //Đợi 1 giâ
+  ​Serial.println();                //Xuống hàng
+  ​delay(1000);                     //Đợi 1 giây
 }
