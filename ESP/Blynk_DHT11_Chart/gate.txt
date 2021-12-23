@@ -1,0 +1,7 @@
+LED: 33
+Light: 26
+Blynk: V5
+relay: 19
+Blynk: V3
+DHT: 21
+Blynk: V1-V2
